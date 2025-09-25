@@ -9,7 +9,7 @@ To Redeploy:
 '''
 gcloud run deploy zoo-mcp-server \
     --no-allow-unauthenticated \
-    --region=us-west1 \
+    --region=us-central1 \
     --source=. \
     --labels=dev-tutorial=codelab-mcp
 '''

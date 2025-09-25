@@ -10,7 +10,7 @@ Google Cloud Run
 uvx --from google-adk \
 adk deploy cloud_run \
   --project=$PROJECT_ID \
-  --region=europe-west1 \
+  --region=us-central1 \
   --service_name=zoo-tour-guide \
   --with_ui \
   . \
