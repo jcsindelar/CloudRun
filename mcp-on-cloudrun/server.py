@@ -281,6 +281,17 @@ def get_animal_details(name: str) -> Dict[str, Any]:
             return animal
     return {}
 
+@mcp.tool()
+def get_animal_count() -> int:
+    """
+    Retrieves the number of animals.
+
+    Returns:
+        The number of animals in the zoo
+    """
+    logger.info(f">>> 🛠️ Tool: 'get_animal_count' called")
+    return len(ZOO_ANIMALS)
+
 @mcp.prompt()
 def find(animal: str) -> str:
     """
